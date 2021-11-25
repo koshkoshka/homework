@@ -16,5 +16,6 @@
       "SymfonySkillbox\\HomeworkBundle\\": "src"
     }
   },
-  "type": "symfony-bundle"
+  "type": "symfony-bundle",
+  "version": "1.0.0"
 }
