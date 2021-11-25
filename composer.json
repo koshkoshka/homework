@@ -1,0 +1,20 @@
+{
+  "name": "symfony-skillbox-homework/unit-factory-bundle",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Andrei Koshksoh",
+      "email": "andreykosh000@mail.ru"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "SymfonySkillbox\\HomeworkBundle\\": "src"
+    }
+  },
+  "type": "symfony-bundle"
+}

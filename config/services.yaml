@@ -1,0 +1,28 @@
+parameters:
+  symfony_skillbox_homework.unit_factory.enable_solder: true
+  symfony_skillbox_homework.unit_factory.enable_archer: true
+  symfony_skillbox_homework.unit_factory.strategy: null
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  SymfonySkillbox\HomeworkBundle\UnitFactory:
+    alias: 'symfony_skillbox_homework.unit_factory'
+
+  symfony_skillbox_homework.strategy:
+    class: 'SymfonySkillbox\HomeworkBundle\StrategyInterface'
+
+  symfony_skillbox_homework.strategy_strength:
+    class: 'SymfonySkillbox\HomeworkBundle\StrengthStrategy'
+  symfony_skillbox_homework.strategy_health:
+    class: 'SymfonySkillbox\HomeworkBundle\HealthStrategy'
+
+  symfony_skillbox_homework.unit_factory:
+    class: 'SymfonySkillbox\HomeworkBundle\UnitFactory'
+    public: true
+    arguments:
+      $strategy: '@symfony_skillbox_homework.strategy'
+      $enableSolder: 'symfony_skillbox_homework.enable_solder'
+      $enableArcher: 'symfony_skillbox_homework.enable_archer'
