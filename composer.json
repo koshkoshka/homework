@@ -1,7 +1,6 @@
 {
   "name": "symfony-skillbox-homework/unit-factory-bundle",
   "description": "description",
-  "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
@@ -17,5 +16,5 @@
     }
   },
   "type": "symfony-bundle",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
