@@ -23,7 +23,7 @@ class Configuration implements \Symfony\Component\Config\Definition\Configuratio
             ->booleanNode('enable_solder')->defaultTrue()->end()
             ->end()
             ->children()
-            ->enumNode('strategy')->values(['strategy_strength', 'strategy_health'])->isRequired()->end()
+            ->enumNode('strategy')->isRequired()->end()
         ;
 
         return $treeBuilder;
